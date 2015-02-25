@@ -1,0 +1,22 @@
+.bubble {
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.wide {
+    width: 90%;
+}
+
+.spaceme {
+    margin-bottom: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+.submit {
+    bottom: 5px;
+    position: absolute;
+    right: 15px;
+    width: 100px;
+}
