@@ -19,3 +19,13 @@ Template.body.events({
        event.target.saywhat.value = "";
    }
 });
+
+Template.body.rendered = function () {
+    this.find('.wrapper')._uihooks = {
+        insertElement: function (node, next) {
+            $('#teemuTop').animate({ top: '-=10px' }, 100);
+            $('#teemuTop').animate({ top: '+=10px' }, 100);
+            $(node).hide().insertBefore(next).fadeIn();
+        }
+    }
+};
