@@ -23,8 +23,16 @@ Template.body.events({
 Template.body.rendered = function () {
     this.find('.wrapper')._uihooks = {
         insertElement: function (node, next) {
-            $('#teemuTop').animate({ top: '-=10px' }, 100);
-            $('#teemuTop').animate({ top: '+=10px' }, 100);
+
+            animate = function(i){
+                $('#teemuTop').animate({ top: '-=10px' }, 100);
+                $('#teemuTop').animate({ top: '+=10px' }, 100);
+                if(i > 0)
+                    setTimeout(animate(i - 1), 1);
+            };
+
+            animate(5);
+
             $(node).hide().insertBefore(next).fadeIn();
         }
     }
