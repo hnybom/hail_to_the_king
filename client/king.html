@@ -1,0 +1,15 @@
+<template name="king">
+    <div class="row">
+        <div class="col-md-6">
+            <img id="teemuTop" width="500px" src="teemu_top_jpeg.jpg">
+            <img width="500px" src="teemu_bottom_jpeg.jpg">
+        </div>
+        <div class="col-md-6 bubble">
+            <ul class="wrapper">
+                {{#each messages}}
+                    <li>{{message}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</template>
