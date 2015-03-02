@@ -1,11 +1,4 @@
-.bubble {
-    margin-top: 10px;
-    border: 1px solid black;
-    position: absolute;
-    right: 195px;
-    top: 108px;
-    border-radius: 13px;
-}
+
 
 .relative {
     position: relative;
@@ -37,3 +30,36 @@
 .title {
     text-transform: uppercase;
 }
+
+.speech-bubble {
+    position: absolute;
+    left: 350px;
+    top: 90px;
+    width: 500px;
+    padding: 10px;
+    margin: 3em;
+    background-color:#FFF;
+    color: #666;
+    font: normal 12px "Segoe UI", Arial, Sans-serif;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 10px solid rgba(0,0,0,0.095);
+}
+.speech-bubble p {
+    font-size: 1.25em;
+}
+
+.speech-bubble:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -40px;
+    border-style: solid;
+    border-width: 30px 30px 30px 0;
+    border-color: transparent rgba(0,0,0,0.095);;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
