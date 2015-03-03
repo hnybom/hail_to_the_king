@@ -5,7 +5,7 @@ Meteor.subscribe('messages');
 
 Template.king.helpers({
     messages: function () {
-        return Messages.find({}, {sort: {created: -1}, limit: 10});
+        return Messages.find({},{sort: {created: -1}});
     }
 });
 
