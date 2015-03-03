@@ -32,6 +32,7 @@
 }
 
 .speech-bubble {
+    min-height: 100px;
     position: absolute;
     left: 350px;
     top: 90px;
